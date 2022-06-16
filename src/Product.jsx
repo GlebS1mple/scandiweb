@@ -1,7 +1,7 @@
-import React from 'react';
+/* import React from 'react';
 import { graphql } from '@apollo/client/react/hoc';
 import gql from 'graphql-tag';
-import NewProduct from './newProduct';
+import NewProduct from './components/Products/newProduct';
 const title = "tech";
 const getProductsQuery = gql`query($input:CategoryInput){
     category(input:$input){
@@ -29,4 +29,4 @@ class Product extends React.Component {
     }
 };
 
-export default graphql(getProductsQuery, { options: { variables: { input: { "title": title } } } })(Product);
+export default graphql(getProductsQuery, { options: { variables: { input: { "title": title } } } })(Product); */

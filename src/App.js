@@ -1,11 +1,11 @@
 import './App.css';
 import React from 'react';
 import { ApolloClient, ApolloProvider, InMemoryCache, gql } from "@apollo/client";
-import Product from './Product';
 import store from './redux/store.js';
 import { Provider } from 'react-redux';
 import Header from './components/Header/Header';
 import { HashRouter } from "react-router-dom";
+import Products from './components/Products/Products';
 const client = new ApolloClient({
   uri: "http://localhost:4000",
   cache: new InMemoryCache()
@@ -19,6 +19,7 @@ class App extends React.Component {
         <ApolloProvider client={client}>
           <div className="App">
             <Header />
+            <Products />
             {/* <ul className="product__list">
             <Product />
           </ul> */}
