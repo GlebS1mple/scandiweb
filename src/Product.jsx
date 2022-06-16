@@ -18,7 +18,6 @@ class Product extends React.Component {
         if (this.props.data.loading) {
             return "loading"
         }
-        console.log(this.props)
         let products = this.props.data.category.products.map(el =>
             <NewProduct id={el.id} key={el.id} />
         );

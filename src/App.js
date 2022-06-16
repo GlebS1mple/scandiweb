@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import { ApolloClient, ApolloProvider, InMemoryCache, gql } from "@apollo/client";
 import Product from './Product';
+import Header from './components/Header/Header';
 
 //import { HashRouter } from "react-router-dom";
 const client = new ApolloClient({
@@ -16,9 +17,10 @@ class App extends React.Component {
       //<HashRouter basename={process.env.PUBLIC_URL}>
       <ApolloProvider client={client}>
         <div className="App">
-          <ul className="product__list">
+          <Header />
+          {/* <ul className="product__list">
             <Product />
-          </ul>
+          </ul> */}
         </div>
       </ApolloProvider>
       //</HashRouter>
