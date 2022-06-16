@@ -1,0 +1,41 @@
+.active{
+    color: #5ECE7B;
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+    outline:0;
+    background-color: transparent;
+    border: none;
+    color: #5ECE7B;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    margin-right: 16px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+.active::after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    border-bottom: 2px solid #5ECE7B;
+}
+.btn{
+    text-transform: uppercase;
+    outline:0;
+    background-color: transparent;
+    border: none;
+    color: #5ECE7B;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    margin-right: 16px;
+    margin-left: 16px;
+    cursor: pointer;
+}
